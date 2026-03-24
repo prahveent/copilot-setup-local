@@ -1,0 +1,21 @@
+{
+  "name": "prahveen_skill_playground",
+  "description": "Reusable skill plugin that bundles gold market analysis, Sri Lanka investment reporting, and parking domain expertise for Claude Code.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Project Maintainers"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-plugin",
+    "agent-skills",
+    "gold-analysis",
+    "investment-reporting",
+    "parking-domain"
+  ],
+  "skills": [
+    "./skills/gold-trend-analyser",
+    "./skills/sri-lanka-investment-report",
+    "./skills/parking-domain-expert"
+  ]
+}
