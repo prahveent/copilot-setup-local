@@ -14,8 +14,10 @@
 | Pysäköinninvalvontamaksu | Finnish | Private parking monitoring fee |
 | Inkasso | Nordic | Debt collection (process of pursuing unpaid fines via collection agency) |
 | Inkassoloven | Norwegian | The Debt Collection Act |
-| ANPR | English | Automatic Number Plate Recognition — camera system reads plates |
+| ANPR | English | Automatic Number Plate Recognition — camera system reads plates. **Detection method only, not a parking model.** ANPR works within zone-based, bay-based, and other parking models equally. |
 | LPR | English | License Plate Recognition — US/international term for ANPR |
+| Parking Model | English | How parking rights are organised at a facility — defines the rules that apply. Examples: zone-based (rights tied to a geographic zone), bay-based (rights tied to a numbered bay), time-restricted, contract-reserved. **Independent of detection method.** |
+| Detection Method | English | How a violation is discovered. Two options: ANPR (automated camera) or patrol (foot officer). Works within any parking model. Both produce the same control sanction entity referencing the same zone. |
 | OCR | English | Optical Character Recognition — the algorithm reading plate text |
 | Zone | English | A defined geographic area with specific parking rules and tariffs |
 | Grace period | English | Mandatory window after ticket expiry before enforcement can act |
@@ -50,7 +52,7 @@
 
 | Term | Definition |
 |------|------------|
-| Entry event | ANPR or manual record of vehicle entering a zone |
+| Entry event | ANPR or manual record of vehicle entering a zone. Either detection method (ANPR camera or patrol officer) can create this record — the parking model (zone-based etc.) is independent of how entry is recorded. |
 | Exit event | ANPR or manual record of vehicle leaving a zone |
 | Session match | Pairing an entry event with its corresponding exit event |
 | Plate confidence | OCR confidence score for plate recognition (0–100%) |
